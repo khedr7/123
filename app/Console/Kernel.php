@@ -6,6 +6,7 @@ use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 use App\Console\Commands\RenameVideo;
 use App\Console\Commands\ReplaceFiles;
+use App\Console\Commands\StartCourseMail;
 
 class Kernel extends ConsoleKernel
 {
@@ -21,6 +22,7 @@ class Kernel extends ConsoleKernel
         RenameVideo::class,
         Commands\DatabaseBackUp::class,
         ReplaceFiles::class,
+        'App\Console\Commands\StartCourseMail'
     ];
 
     /**
@@ -33,6 +35,9 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
+
+
+        $schedule->command('startMail:courses')->daily();
     }
 
     /**
