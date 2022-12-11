@@ -653,4 +653,7 @@ return array (
   'whatsappcolor' => 'Header Color',
   'Login/Signup' => 'Login/Signup',
   'Login As User' => 'Login As User',
+  'StartDate' => 'Start Date',
+  'EndDate' => 'End Date',
+
 );

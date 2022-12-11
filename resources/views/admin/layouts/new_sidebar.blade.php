@@ -220,11 +220,11 @@
                                             href="{{url('refundpolicy')}}"><span>{{ __('adminstaticword.RefundPolicy') }}</span></a>
                                     </li>
                                     @endcan
-                                    {{-- @can(['batch.view'])
+                                    @can(['batch.view'])
                                     <li class="{{ Nav::isResource('batch') }}"><a
                                             href="{{url('batch')}}"><span>{{ __('adminstaticword.Batch') }}</span></a>
                                     </li>
-                                    @endcan --}}
+                                    @endcan
                                     @can(['quiz-review.view'])
                                     <li class="{{ Nav::isRoute('quiz.review') }}"><a
                                             href="{{route('quiz.review')}}"><span>{{ __('adminstaticword.QuizReview') }}</span></a>

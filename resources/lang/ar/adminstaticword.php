@@ -1,6 +1,6 @@
 <?php
 
-return array (
+return array(
   'A' => 'أ',
   'ADDBlog' => 'إضافة بلوق',
   'ADDCSS' => 'إضافة CSS.',
@@ -496,8 +496,8 @@ return array (
   'Right' => 'حق',
   'RightClick' => 'انقر على اليمين',
   'Role' => 'دور',
-  'S' => 
-  array (
+  'S' =>
+  array(
     'No' => 'S.NO.',
   ),
   'STRIPEPAYMENT' => 'مخطط',
@@ -641,4 +641,6 @@ return array (
   'course' => 'دورة',
   'footerlogo' => 'تذييل الشعار',
   'whatsappcolor' => 'لون رأس',
+  'StartDate' => 'تاريخ البداية',
+  'EndDate' => 'تاريخ النهاية',
 );
