@@ -127,7 +127,7 @@ return array(
     'Modules\\' => array($baseDir . '/Modules'),
     'Midtrans\\' => array($vendorDir . '/midtrans/midtrans-php/Midtrans'),
     'Mews\\Purifier\\' => array($vendorDir . '/mews/purifier/src'),
-    'League\\Uri\\' => array($vendorDir . '/league/uri-interfaces/src', $vendorDir . '/league/uri/src'),
+    'League\\Uri\\' => array($vendorDir . '/league/uri/src', $vendorDir . '/league/uri-interfaces/src'),
     'League\\OAuth2\\Server\\' => array($vendorDir . '/league/oauth2-server/src'),
     'League\\OAuth1\\Client\\' => array($vendorDir . '/league/oauth1-client/src'),
     'League\\MimeTypeDetection\\' => array($vendorDir . '/league/mime-type-detection/src'),

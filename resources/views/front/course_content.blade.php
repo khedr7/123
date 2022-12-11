@@ -397,6 +397,17 @@
                             <hr>
                             <div class="row">
                                 <div class="col-lg-3 col-md-3">
+                                    <div class="content-course-number">{{ __('Start date') }}</div>
+                                </div>
+                                <div class="col-lg-9 col-md-9">
+                                    <div class="content-course-number content-course-one">
+                                        <p>{{ $course->start_date }}<p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3">
                                     <div class="content-course-number">{{ __('Description') }}</div>
                                 </div>
                                 <div class="col-lg-9 col-md-9">

@@ -133,6 +133,7 @@
                             }
                         @endphp
                         {{ __('students enrolled') }}
+                       
                     </li>
                 </ul>
             </div>
@@ -247,6 +248,13 @@
                                 }
                             @endphp
                             {{ __('students enrolled') }}
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="pull-left no-rating">
+                                {{ __('Start date :') }} {{ $course->start_date }}
+                            </div>
                         </li>
                     </ul>
                     <ul>
@@ -788,11 +796,11 @@
                             </div>
                         </div>
                     </div>
-                    @if ($course->institude_id ==0) 
-                    <div class="about-content-sidebar mt-md-4">
-                        <div class="container">
-                            @php
-                            //error in @if ($course->institude_id ==0)
+                    {{--  @if ($course->institude_id == 0)
+                        <div class="about-content-sidebar mt-md-4">
+                            <div class="container">
+                                @php
+                                    //error in @if ($course->institude_id == 0)
                                     $insti = App\Institute::where('id', $course->institude_id)->first();
                                 @endphp
                                 @if (isset($insti))
@@ -848,7 +856,7 @@
                                 @endif
                             </div>
                         </div>
-                    @endif
+                    @endif --}}
 
                 </div>
             </div>
@@ -1332,7 +1340,8 @@
                                                                                     @if (isset($meeting->user))
                                                                                         {{ $meeting->user['fname'] }}
                                                                                         {{ $meeting->user['lname'] }}
-                                                                                    @endif </a>
+                                                                                    @endif
+                                                                                </a>
 
                                                                             </li>
                                                                             <li>
@@ -1405,7 +1414,8 @@
                                                                                         @if (isset($meeting->user))
                                                                                             {{ $meeting->user['fname'] }}
                                                                                             {{ $meeting->user['lname'] }}
-                                                                                        @endif </a>
+                                                                                        @endif
+                                                                                    </a>
 
                                                                                 </li>
                                                                                 <li>
@@ -1479,7 +1489,8 @@
                                                                                         @if (isset($meeting->user))
                                                                                             {{ $meeting->user['fname'] }}
                                                                                             {{ $meeting->user['lname'] }}
-                                                                                        @endif </a>
+                                                                                        @endif
+                                                                                    </a>
 
                                                                                 </li>
                                                                                 <li>
@@ -2732,6 +2743,7 @@
                                                                 <span>{{ optional($rel->courses->user)['fname'] }}</span>
                                                             </h6>
                                                         </div>
+                                                        
                                                         <div class="rating">
                                                             <ul>
                                                                 <li>
